@@ -1,4 +1,5 @@
 import express from 'express'
+import booksRouter from './routes/books.js'
 const app = express()
 
 app.use('./public', express.static('./public'))
@@ -15,3 +16,5 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () =>{
     console.log(`Server lisitening on http://localhost:${PORT}`)
 })
+
+app.use('/books', booksRouter)
