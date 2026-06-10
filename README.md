@@ -39,7 +39,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='client/public/books.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/7BeatRice/Doom-Reading/blob/main/client/Screen%20Recording%20-%20Jun%209%2C%202026.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with https://gifcap.dev/
