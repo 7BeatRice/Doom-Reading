@@ -1,6 +1,3 @@
-# Doom-Reading
-We are all aware of the negative effects of doom scrolling when bored, why don't we replace this habit with a better, more phone, and healthier alternative: doom reading
-
 # WEB103 Project 1 - # Doom-Reading
 
 Submitted by: Beatrice Olaosebikan
@@ -49,7 +46,7 @@ GIF created with https://gifcap.dev/
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
 
-Manytime things would noty render and there would be no error. I was able to pinpoint the cause by push often when things work and backtracing the steps I took from my last push.
+Many timesm, things would not render and there would be no error message. I was able to pinpoint the cause by pushing often when things work and backtracing the steps I took from my last push.
 
 ## License
 
