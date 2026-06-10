@@ -88,7 +88,7 @@ const bookData = [
         "author": "Frank Herbert, Brian Herbert, Kevin J. Anderson",
         "price": "$25",
         "genre": "Graphic Novel",
-        "image": "hhttps://m.media-amazon.com/images/I/81T5ecpb8aL._SL1481_.jpg",
+        "image": "https://m.media-amazon.com/images/I/81T5ecpb8aL._SL1481_.jpg",
         "description": "The definitive graphic novel adaptation of Dune, the groundbreaking science-fiction classic by Frank Herbert. A stunning blend of adventure and mysticism, environmentalism, and politics, Dune follows Paul Atreides and his family as they deploy to the dangerous desert planet Arrakis to assume control of the universe's most valuable substance: the spice melange.",
         "publicationDate": "2020-11-24",
         "buyHere": "https://www.amazon.com/DUNE-Graphic-Novel-Book-Dune/dp/1419731505/",

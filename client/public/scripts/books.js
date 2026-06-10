@@ -49,4 +49,45 @@ const renderBooks = async () => {
         mainContent.appendChild(noBooks)
     }
 }
-renderBooks()
+
+const renderBook = async () => {
+    const requestedID = parseInt(window.location.href.split('/').pop())
+    const response = await fetch('/books')
+    const data = await response.json()
+    const bookContent = document.getElementById('book-content')
+    let book
+
+    if (data){
+        book =data.find(book => book.id === requestedID)
+        if (book){
+            document.getElementById('image').src = book.image
+            document.getElementById('title').textContent = book.title
+            document.getElementById('author').textContent = 'Author: ' + book.author
+            document.getElementById('price').textContent = 'Price: ' + book.price
+            document.getElementById('genre').textContent = 'Genre: ' + book.genre
+            document.getElementById('fictionOrNonfiction').textContent = 'Fiction or Nonfiction: ' + book.fictionOrNonfiction
+            document.getElementById('publicationDate').textContent = 'Publication Date: ' + book.publicationDate
+            document.getElementById('description').textContent = book.description
+            document.title = `DoomReading- ${book.title}`
+            document.getElementById('buyHere').textContent = 'Buy Now'
+            document.getElementById('buyHere').href = book.buyHere
+
+
+        }
+        else{
+        const noBooks = document.createElement('h2')
+        noBooks.textContent = "No Books Available 😞"
+        bookContent.appendChild(noBooks)
+
+        }
+    }
+
+}
+const requestedUrl = window.location.href.split('/').pop()
+if (requestedUrl > 15) {
+    window.location.href = '../404.html'
+}
+else {
+    renderBooks()
+}
+renderBook()
