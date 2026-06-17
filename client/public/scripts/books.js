@@ -83,11 +83,27 @@ const renderBook = async () => {
     }
 
 }
-const requestedUrl = window.location.href.split('/').pop()
-if (requestedUrl > 15) {
-    window.location.href = '../404.html'
+
+const displayBook = async () => {
+    const urlArray = window.location.href.split('/')
+    console.log(urlArray)
+    const requestedUrl= urlArray.pop()
+    console.log("requested url: " + requestedUrl)
+    const bookUrl = urlArray.pop()
+    const response = await fetch('/books')
+    const data = await response.json()
+    const bookIds = data.map(item => item.id)
+    console.log("bookIds: " + bookIds)
+
+    if (!requestedUrl){
+        renderBooks()
+    }
+    else if (bookUrl == 'books' && bookIds.includes(Number(requestedUrl))) {
+        renderBook()
+    }
+    else{
+        window.location.href = '../404.html'
+    }
+
 }
-else {
-    renderBooks()
-}
-renderBook()
+displayBook()

@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "unearthed",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,11 +7,10 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1",
-    "nodemon": "^3.1.14"
+    "express": "^4.22.2",
+    "nodemon": "^2.0.22"
   }
 }

@@ -2,8 +2,8 @@ import express from 'express'
 import booksRouter from './routes/books.js'
 const app = express()
 
-app.use('./public', express.static('./public'))
-app.use('/scripts', express.static('./public/scripts'))
+app.use('./public', express.static('../dist'))
+app.use('/scripts', express.static('../dist/scripts'))
 
 //route for root url
 app.get('/', (req, res) => {
