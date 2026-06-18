@@ -2,7 +2,7 @@ import express from 'express'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import bookData from '../data/books.js'
-
+import BookController from '../controllers/books.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -19,4 +19,6 @@ router.get('/:bookId', (req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, '../../dist/book.html'))
 })
 
-export default router
+router.get('/', BookController.getBooks)
+
+export default router 
