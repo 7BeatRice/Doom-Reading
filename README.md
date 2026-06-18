@@ -1,56 +1,48 @@
-# WEB103 Project 1 - # Doom-Reading
+# WEB103 Project 2 - Doom Reading
 
 Submitted by: Beatrice Olaosebikan
 
-About this web app: We are all aware of the negative effects of doom scrolling when bored, why don't we replace this habit with a better, more phone, and healthier alternative: doom reading
+About this web app: We are all aware of the negative effects of doom scrolling when bored, why don't we replace this habit with a better, more fun, and healthier alternative: doom reading
 
-Time spent: 6 hours
+Time spent: 10 hours
 
 ## Required Features
 
 The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
-- [x
-] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [x] **The web app displays a title**
-- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
-- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
-  - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [x] **The web app serves an appropriate 404 page when no matching route is defined**
-- [x] **The web app is styled using Picocss**
+- [X] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
+- [X] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+  - [X] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [X]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+
 
 The following **optional** features are implemented:
 
-- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
+- [ ] The user can search for items by a specific attribute
 
 The following **additional** features are implemented:
 
-- [x] List anything else that you added to improve the site's functionality!
--Include link to buy the book
+- [ ] User can Sort by attributes
+- [ ] User can filter by attributes
 
 ## Video Walkthrough
 
-**Note: please be sure to 
-
 Here's a walkthrough of implemented required features:
 
-<img src='client\assets\Animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='client\assets\Animation2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with `https://www.screentogif.com/
-
+GIF created with https://www.screentogif.com/
 
 ## Notes
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
 
-Many timesm, things would not render and there would be no error message. I was able to pinpoint the cause by pushing often when things work and backtracing the steps I took from my last push.
+Sometimes the books would not render due to minor things like syntax, but inspecting, logging, and following stack traces helped in pinpointing and resolving errors.
 
 ## License
 
-Copyright [2026] Beatrice Olaosebikan
+Copyright [2026] [Beatrice Olaosebikan]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
