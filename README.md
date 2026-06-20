@@ -1,43 +1,44 @@
-# WEB103 Project 2 - Doom Reading
+# WEB103 Project 1 - Doom-Reading
 
 Submitted by: Beatrice Olaosebikan
 
 About this web app: We are all aware of the negative effects of doom scrolling when bored, why don't we replace this habit with a better, more fun, and healthier alternative: doom reading
 
-Time spent: 10 hours
+Time spent: 16 hours
 
 ## Required Features
 
 The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
-- [X] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [X] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
-  - [X] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
-  - [X]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
-
+- [x] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
+- [x] **The web app displays a title**
+- [x] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
+- [x] **The user can click on each item in the list to see a detailed view of it, including all database fields**
+  - [x] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
+  - [ ] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
+- [x] **The web app serves an appropriate 404 page when no matching route is defined**
+- [x] **The web app is styled using Picocss**
 
 The following **optional** features are implemented:
 
-- [ ] The user can search for items by a specific attribute
+- [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
 
 The following **additional** features are implemented:
 
-- [ ] User can Sort by attributes
-- [ ] User can filter by attributes
-
+- [x] Addeded dark and light mode toggle for each page
 ## Video Walkthrough
+
+**Note: please be sure to 
 
 Here's a walkthrough of implemented required features:
 
-<img src='client\assets\Animation2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='client\assets\animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with https://www.screentogif.com/
-
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with (https://www.screentogif.com/) 
 ## Notes
-
-Describe any challenges encountered while building the app or any additional context you'd like to add.
-
+So much styling conflicts.
 Sometimes the books would not render due to minor things like syntax, but inspecting, logging, and following stack traces helped in pinpointing and resolving errors.
 
 ## License

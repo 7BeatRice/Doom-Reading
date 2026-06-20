@@ -3,16 +3,21 @@ const renderBooks = async () => {
     const response = await fetch('/books')
     const data = await response.json()
     const mainContent = document.getElementById('main-content')
+   
     if (data){
+        html.setAttribute('data-theme' ,'dark')
         console.log("in data")
         data.map(book => {
-            const card = document.createElement('div')
+            const card = document.createElement('article')
             card.className = 'card'
             const bottomContainer = document.createElement('div')
             bottomContainer.className = 'bottom-container'
             const topContainer = document.createElement('div')
             topContainer.className = 'top-container'
             topContainer.style.backgroundImage = `url(${book.image})`
+            card.classList.add('cardLightShadow')
+
+           
 
             const title = document.createElement('h3')
             title.textContent= book.title
@@ -34,15 +39,39 @@ const renderBooks = async () => {
             link.textContent = 'Read More >'
             link.setAttribute('role', 'button')
             link.href = `/books/${book.id}`
+            link.classList.add('buttonDark')
             bottomContainer.appendChild(link)
+
+
+             const inputBut = document.getElementById("inputBut")
+
+            inputBut.addEventListener('click', function handleClick(event){
+                if (inputBut.checked){
+                    card.classList.remove('cardLightShadow')
+                    card.classList.add('cardDarkShadow')
+                    link.classList.remove('buttonDark')
+                    link.classList.add('buttonLight')
+
+                }
+                else{
+                   card.classList.remove('cardDarkShadow')
+                    card.classList.add('cardLightShadow')
+                    link.classList.remove('buttonLight')
+                    link.classList.add('buttonDark')
+                
+
+                }
+            })
+                      
 
             card.appendChild(topContainer)
             card.appendChild(bottomContainer)
-            mainContent.appendChild(card)
+            mainContent.appendChild(card)                                                       
 
-        })
+        
+    
 
-    }
+    })}
     else{
         const noBooks = document.createElement('h2')
         noBooks.textContent = "No Books Available 😞"
@@ -58,6 +87,9 @@ const renderBook = async () => {
     let book
 
     if (data){
+         const html = document.querySelector('html')
+         html.setAttribute('data-theme', 'dark')
+        console.log(html.getAttribute('data-theme'));
         book =data.find(book => book.id === requestedID)
         if (book){
             document.getElementById('image').src = book.image

@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html  data-theme="dark">
     <head>
-            <title>Doom-Reading</title>
-            <link rel="stylesheet" href="/style.css"/>
+            <title>Doom-Reading</title>  
+         <link rel="stylesheet" 
+    href = "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+     <link rel="stylesheet" href="/style.css"/>
             <link rel="icon" type="image/x-icon" href="./logo.png">
             <script defer src="/scripts/books.js"></script>
             <script defer src="/scripts/header.js"></script>
 
     </head>
     <body>
-        <header></header>
+         <header></header>
         <main id="book-content" class="book-info">
-            <div class = "image-container">
-                <img id="image" src = ""/>
+            <div class ="book-container">
+                <div class="book">
+                    <img id="image" src = ""/>
+                    <div class="spine-shadow"></div>
+                </div>
+            </div>
+                
                 <div class="book-details">
                     <h2 id="title"></h2>
                     <p id="author"></p>
@@ -25,6 +32,6 @@
                 </div>
             </div>
         </main>
-
+        
     </body>
 </html>
