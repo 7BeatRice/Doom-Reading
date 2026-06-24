@@ -1,7 +1,6 @@
 //creates a database table for the books, and populates each entry with our data
 import {pool} from './database.js'
 import './dotenv.js'
-import giftData from '../data/books.js'
 import bookData from '../data/books.js'
 
 const createBooksTable = async() => {

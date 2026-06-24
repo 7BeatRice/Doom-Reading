@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 
 //gets the indivudal book detail page 
 router.get('/:bookId', (req, res) => {
-  res.status(200).sendFile(path.resolve(__dirname, '../../dist/book.html'))
+  res.status(200).sendFile(path.resolve(__dirname, '../../client/public/book.html'))
 })
 
 router.get('/', BookController.getBooks)

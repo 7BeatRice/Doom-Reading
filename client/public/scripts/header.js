@@ -40,6 +40,26 @@ inputBut.setAttribute('type', 'checkbox')
 inputBut.setAttribute('role', "switch")
 inputBut.id = "inputBut"
 
+
+const headerMid = document.createElement('div')
+headerMid.className = 'header-mid'
+const form = document.createElement('form')
+form.id = 'search'
+const input = document.createElement('input')
+input.id = 'searchBar'
+input.setAttribute('type', 'search')
+input.setAttribute('placeholder', '       Search for Books')
+input.setAttribute('spellcheck', "true")
+const ul = document.createElement("ul")
+ul.id = "suggestionBox"
+const submitBut = document.createElement('button')
+submitBut.id = "searchIcon"
+submitBut.setAttribute("type", "submit")
+
+form.appendChild(input)
+form.appendChild(submitBut)
+form.appendChild(ul)
+headerMid.appendChild(form)
 inputBut.addEventListener('click', function handleClick(event){
     if (inputBut.checked){
         modeLable.textContent = "Dark Mode 🌙"
@@ -60,11 +80,14 @@ inputBut.addEventListener('click', function handleClick(event){
 
     }
 })
+
 switchMode.appendChild(modeLable)
 switchMode.appendChild(inputBut)
 buttonDiv.appendChild(homeButton)
 buttonDiv.appendChild(switchMode)
 headerRight.appendChild(buttonDiv)
 headerContainer.appendChild(headerLeft)
+headerContainer.appendChild(headerMid)
 headerContainer.appendChild(headerRight)
+
 header.appendChild(headerContainer)

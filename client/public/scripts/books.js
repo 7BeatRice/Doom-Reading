@@ -1,5 +1,4 @@
 const renderBooks = async () => {
-    console.log("in in async")
     const response = await fetch('/books')
     const data = await response.json()
     const mainContent = document.getElementById('main-content')
